@@ -1813,9 +1813,6 @@
                     "GUID": "992f3906-6a9d-11ea-a5ff-a16524f9bb05",
                     "childType": "numeric",
                     "relationshipType": "",
-                    "childRelationships": [
-                        "993a3585-6a9d-11ea-a5ff-a16524f9bb05"
-                    ],
                     "sample": 680,
                     "compositeKey": [
                         "compositePrimaryKey",
@@ -3144,13 +3141,6 @@
                     "name": "ProductID",
                     "GUID": "992f8731-6a9d-11ea-a5ff-a16524f9bb05",
                     "childType": "numeric",
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "993a3585-6a9d-11ea-a5ff-a16524f9bb05",
-                    "foreignCollection": "99363de0-6a9d-11ea-a5ff-a16524f9bb05",
-                    "foreignField": [
-                        "99363de0-6a9d-11ea-a5ff-a16524f9bb05",
-                        "992f3906-6a9d-11ea-a5ff-a16524f9bb05"
-                    ],
                     "sample": 836,
                     "compositeKey": [
                         "compositePrimaryKey",
@@ -3159,7 +3149,8 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "clustered": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "error": {}
                 },
                 {
                     "code": "",
@@ -4879,29 +4870,6 @@
             "parentCardinality": "1"
         },
         {
-            "GUID": "993a3585-6a9d-11ea-a5ff-a16524f9bb05",
-            "name": "FK_SalesOrderDetail_Product_ProductID",
-            "description": "",
-            "comments": "",
-            "parentCollection": "99363de0-6a9d-11ea-a5ff-a16524f9bb05",
-            "parentField": [
-                [
-                    "99363de0-6a9d-11ea-a5ff-a16524f9bb05",
-                    "992f3906-6a9d-11ea-a5ff-a16524f9bb05"
-                ]
-            ],
-            "childCollection": "9937eb93-6a9d-11ea-a5ff-a16524f9bb05",
-            "childField": [
-                [
-                    "9937eb93-6a9d-11ea-a5ff-a16524f9bb05",
-                    "992f8731-6a9d-11ea-a5ff-a16524f9bb05"
-                ]
-            ],
-            "relationshipType": "Foreign Key",
-            "parentCardinality": "1",
-            "childCardinality": "0..n"
-        },
-        {
             "GUID": "993a3586-6a9d-11ea-a5ff-a16524f9bb05",
             "name": "FK_Product_ProductCategory_ProductCategoryID",
             "description": "",
@@ -5189,7 +5157,6 @@
         "993a3582-6a9d-11ea-a5ff-a16524f9bb05": "FK_Product_ProductModel_ProductModelID",
         "993a3583-6a9d-11ea-a5ff-a16524f9bb05": "FK_ProductModelProductDescription_ProductModel_ProductModelID",
         "993a3584-6a9d-11ea-a5ff-a16524f9bb05": "FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID",
-        "993a3585-6a9d-11ea-a5ff-a16524f9bb05": "FK_SalesOrderDetail_Product_ProductID",
         "993a3586-6a9d-11ea-a5ff-a16524f9bb05": "FK_Product_ProductCategory_ProductCategoryID",
         "993a3587-6a9d-11ea-a5ff-a16524f9bb05": "FK_ProductCategory_ProductCategory_ParentProductCategoryID_ProductCategoryID",
         "993a3588-6a9d-11ea-a5ff-a16524f9bb05": "FK_CustomerAddress_Address_AddressID",
@@ -5463,7 +5430,7 @@
     "creationTS": "2020-03-20T11:25:55.598Z",
     "GUID": "908fe2e0-6a9d-11ea-a5ff-a16524f9bb05",
     "code": "",
-    "lastModifTS": "2022-12-13T17:48:25.380Z",
+    "lastModifTS": "2022-12-13T17:53:46.816Z",
     "persistenceSchemaVersion": "6",
     "description": "From the AdventureWorks sample database described at https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15",
     "comments": "",
