@@ -387,8 +387,7 @@
                     "childType": "numeric",
                     "relationshipType": "",
                     "childRelationships": [
-                        "993a3580-6a9d-11ea-a5ff-a16524f9bb05",
-                        "993a3581-6a9d-11ea-a5ff-a16524f9bb05"
+                        "993a3580-6a9d-11ea-a5ff-a16524f9bb05"
                     ],
                     "sample": 1,
                     "compositeKey": [
@@ -3687,13 +3686,6 @@
                     "name": "CustomerID",
                     "GUID": "992fae34-6a9d-11ea-a5ff-a16524f9bb05",
                     "childType": "numeric",
-                    "relationshipType": "Foreign Key",
-                    "parentRelationship": "993a3581-6a9d-11ea-a5ff-a16524f9bb05",
-                    "foreignCollection": "9932bb70-6a9d-11ea-a5ff-a16524f9bb05",
-                    "foreignField": [
-                        "9932bb70-6a9d-11ea-a5ff-a16524f9bb05",
-                        "992ec3d1-6a9d-11ea-a5ff-a16524f9bb05"
-                    ],
                     "sample": 29847,
                     "compositeKey": [
                         "compositePrimaryKey",
@@ -3702,7 +3694,8 @@
                     "compositePrimaryKey": false,
                     "compositeUniqueKey": false,
                     "clustered": true,
-                    "isActivated": true
+                    "isActivated": true,
+                    "error": {}
                 },
                 {
                     "code": "",
@@ -4817,29 +4810,6 @@
             "parentCardinality": "1"
         },
         {
-            "GUID": "993a3581-6a9d-11ea-a5ff-a16524f9bb05",
-            "name": "FK_SalesOrderHeader_Customer_CustomerID",
-            "description": "",
-            "comments": "",
-            "parentCollection": "9932bb70-6a9d-11ea-a5ff-a16524f9bb05",
-            "parentField": [
-                [
-                    "9932bb70-6a9d-11ea-a5ff-a16524f9bb05",
-                    "992ec3d1-6a9d-11ea-a5ff-a16524f9bb05"
-                ]
-            ],
-            "childCollection": "993860c2-6a9d-11ea-a5ff-a16524f9bb05",
-            "childField": [
-                [
-                    "993860c2-6a9d-11ea-a5ff-a16524f9bb05",
-                    "992fae34-6a9d-11ea-a5ff-a16524f9bb05"
-                ]
-            ],
-            "relationshipType": "Foreign Key",
-            "parentCardinality": "1",
-            "childCardinality": "0..n"
-        },
-        {
             "GUID": "993a3582-6a9d-11ea-a5ff-a16524f9bb05",
             "name": "FK_Product_ProductModel_ProductModelID",
             "description": "",
@@ -5216,7 +5186,6 @@
         "992fae37-6a9d-11ea-a5ff-a16524f9bb05": "ModifiedDate",
         "993860c2-6a9d-11ea-a5ff-a16524f9bb05": "SalesOrderHeader",
         "993a3580-6a9d-11ea-a5ff-a16524f9bb05": "FK_CustomerAddress_Customer_CustomerID",
-        "993a3581-6a9d-11ea-a5ff-a16524f9bb05": "FK_SalesOrderHeader_Customer_CustomerID",
         "993a3582-6a9d-11ea-a5ff-a16524f9bb05": "FK_Product_ProductModel_ProductModelID",
         "993a3583-6a9d-11ea-a5ff-a16524f9bb05": "FK_ProductModelProductDescription_ProductModel_ProductModelID",
         "993a3584-6a9d-11ea-a5ff-a16524f9bb05": "FK_ProductModelProductDescription_ProductDescription_ProductDescriptionID",
@@ -5494,7 +5463,7 @@
     "creationTS": "2020-03-20T11:25:55.598Z",
     "GUID": "908fe2e0-6a9d-11ea-a5ff-a16524f9bb05",
     "code": "",
-    "lastModifTS": "2022-12-13T17:05:23.052Z",
+    "lastModifTS": "2022-12-13T17:48:25.380Z",
     "persistenceSchemaVersion": "6",
     "description": "From the AdventureWorks sample database described at https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15",
     "comments": "",
@@ -5602,7 +5571,7 @@
                         "GUID": "993860c2-6a9d-11ea-a5ff-a16524f9bb05",
                         "x": 173.27558256687905,
                         "y": 487.0607342516888,
-                        "width": 425,
+                        "width": 424,
                         "height": 429,
                         "color": {}
                     },
